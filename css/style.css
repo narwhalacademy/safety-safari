@@ -1,0 +1,57 @@
+.card {
+  min-height: 300px;
+  width: 250px;
+  position: relative;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.cardFront,
+.cardBack {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-shadow: 0 0 0px 3px rgba(0,0,0,0.2), 0 0 50px 1px rgba(0,0,0,0.4), 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  transition: transform 0.5s ease;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cardBack {
+  transform: perspective(1000px) rotateY(180deg);
+  background-color: #ebf4ff;
+  padding: 1rem 2rem;
+  align-content: center;
+  line-height: 1.5;
+  text-align: center;
+}
+.cardBack.flipped {
+  transform: perspective(1000px) rotateY(0deg);
+}
+.cardFront {
+  transform: perspective(1000px) rotateY(0deg);
+  background-color: #000000;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  font-size: 12rem;
+  padding-top: 1.5rem;
+  border: 0.75rem solid white;
+  font-weight: normal;
+  -webkit-text-stroke: 2px #ffffff;
+  color: rgba(0,0,0,0);
+}
+.cardFront.flipped {
+  transform: perspective(1000px) rotateY(-180deg);
+}
+#front1 {
+  background-image: url('../img/zebra-3703855-red.jpg');
+}
+#front2 {
+  background-image: url('../img/wildlife-4878353-red.jpg');
+}
+#front3 {
+  background-image: url('../img/elephant-7774904-red.jpg');
+}
