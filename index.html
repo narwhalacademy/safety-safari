@@ -23,46 +23,91 @@
       <div id="cardOne" class="card marginleft-minusxxxlarge">
         <div id="back1" class="cardBack">
 
-          <!-- START QUESTION 1 -->
+          <!-- ...... START ....... -->
+          <!-- ..... QUESTION ..... -->
+          <!-- ........ 1 ......... -->
           Your phone was stolen last night at the restaurant. What do you do?
-          <!-- END QUESTION 1 -->
+          <!-- ....... END ........ -->
+          <!-- ..... QUESTION ..... -->
+          <!-- ........ 1 ......... -->
 
         </div>
         <div id="front1" class="cardFront">
+          <div class="screen-reader-text">
+            A playing card with a photo of a zebra (color filtered with only red and black) on it
+          </div>
           ?
         </div>
       </div>
       <div id="cardTwo" class="card margintop-minusxxxlarge">
         <div id="back2" class="cardBack">
 
-          <!-- START QUESTION 2 -->
+          <!-- ...... START ....... -->
+          <!-- ..... QUESTION ..... -->
+          <!-- ........ 2 ......... -->
           Your manager at work says someone has contact them about your social media posts. Your manager is unhappy about this. What do you do?
-          <!-- END QUESTION 2 -->
+          <!-- ....... END ........ -->
+          <!-- ..... QUESTION ..... -->
+          <!-- ........ 2 ......... -->
 
         </div>
         <div id="front2" class="cardFront"> 
+          <div class="screen-reader-text">
+            A playing card with a photo of a lion (color filtered with only red and black) on it
+          </div>
           ?
         </div>
       </div>
       <div id="cardThree" class="card margintop-minusxxxlarge marginleft-xxxlarge">
         <div id="back3" class="cardBack">
 
-          <!-- START QUESTION 3 -->
+          <!-- ...... START ....... -->
+          <!-- ..... QUESTION ..... -->
+          <!-- ........ 3 ......... -->
           Your close friend is being harassed online, and it's been happening for more than a month. What do you do?
-          <!-- END QUESTION 3 -->
-
+          <!-- ....... END ........ -->
+          <!-- ..... QUESTION ..... -->
+          <!-- ........ 3 ......... -->
+          
         </div>
         <div id="front3" class="cardFront">
+          <div class="screen-reader-text">
+            A playing card with a photo of a elephant (color filtered with only red and black) on it
+          </div>
           ?
         </div>
       </div>
     </div>
     <div class="display-none display-block-mediaM position-fixed" style="bottom: -10rem; left: -12rem; pointer-events: none">
-      <img style="width: 28rem;" src="img/coffeecup.png">
+      <img id="coffeecup" src="img/coffeecup.png" alt="Top down photo of an almost full ceramic coffee cup">
     </div>
     <div class="display-none display-block-mediaM position-fixed zindex-3" style="bottom: -12rem; right: -15rem; pointer-events: none;">
-      <img style="width: 32rem;" src="img/hand-sm.png">
+      <img id="hand" src="img/hand-sm.png" alt="A photo of a relaxed, light-skinned hand with long fingernails">
     </div>
+    <div id="hints" class="display-block">
+      <a class="textdecoration-none" href="https://github.com/narwhalacademy/safety-safari">
+        <div>
+          <div class="position-fixed zindex-2 boxshadow-2 width-xxxlarge height-xxlarge textalign-center transform-rotate45deg" style="top: -3rem; right: -7rem; background-color: #096BDE;">
+            <img class="width-large display-inlineblock margintop-xlarge" src="img/GitHub_Invertocat_Light.svg" alt="GitHub logo" />
+            <div class="fontsize-2 color-white margintop-small">
+              View on GitHub
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="position-fixed bottom-1 marginbottom-xlarge width-100percent textshadow-4 textalign-center color-tint9 fontsize-2 fontsize-3-mediaL">
+        Feel free to drag the cards around. Double click on one to flip it.
+      </div>
+    </div>
+    <div class="display-flex flexdirection-row alignitems-center justifycontent-center position-fixed bottom-0 marginbottom-small width-100percent textalign-left width-100pecent">
+      <div id="toggleBackground" class="width-large height-medium borderradius-5 backgroundcolor-green6 cursor-pointer" onclick="toggleHints();">
+        <div id="toggleButton" class="width-medium height-medium marginleft-medium borderradius-5 backgroundcolor-tint10" style="transition: 0.5s;"></div>
+      </div>
+      <div id="toggleHintLabel" class="marginleft-medium color-tint8 texttransform-uppercase fontsize-2">
+        Turn off hints?
+      </div>
+    </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>

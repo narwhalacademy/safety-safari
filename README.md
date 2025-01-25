@@ -4,6 +4,8 @@
 
 A simple card game interface to spice up online workshops where the faciliator walks their attendees through three digital safety scenarios. Feel free to customize it and use it in your own workshops!
 
+[View a live demo online.](https://safetysafari.narwhalacademy.org)
+
 ## How to use
 
 Note: Safety Safari assumes that the faciliator is sharing their screen on a desktop or laptop computer (it doesn't really work on phones or tablets very well).

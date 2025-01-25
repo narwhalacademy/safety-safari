@@ -33,6 +33,15 @@ $( function() {
   $( "#cardThree" ).draggable();
 } );
 
+function toggleHints() {
+    $( "#hints" ).toggleClass( "display-block" );
+    $( "#hints" ).toggleClass( "display-none" );
+    $( "#toggleBackground" ).toggleClass( "backgroundcolor-shadow8" );
+    $( "#toggleBackground" ).toggleClass( "backgroundcolor-green6" );
+    $( "#toggleButton" ).toggleClass( "marginleft-medium" );
+    $( "#toggleHintLabel" ).toggleClass( "display-none" );
+}
+
 // https://dirask.com/posts/JavaScript-bring-div-element-to-front-on-click-DdZ3Qj
 function createStack(counter) {
     if (counter == null) {
@@ -58,20 +67,3 @@ var stack = createStack();
 stack.registerElement(document.querySelector('#cardOne'));
 stack.registerElement(document.querySelector('#cardTwo'));
 stack.registerElement(document.querySelector('#cardThree'));
-
-// https://www.geeksforgeeks.org/read-json-file-using-javascript/
-function fetchJSONData() {
-    fetch("./questions.json")
-        .then((res) => {
-            if (!res.ok) {
-                throw new Error
-                    (`HTTP error! Status: ${res.status}`);
-            }
-            return res.json();
-        })
-        .then((data) =>
-            console.log(data))
-        .catch((error) =>
-            console.error("Unable to fetch data:", error));
-}
-fetchJSONData();

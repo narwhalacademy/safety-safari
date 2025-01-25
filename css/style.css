@@ -55,3 +55,18 @@
 #front3 {
   background-image: url('../img/elephant-7774904-red.jpg');
 }
+
+#coffeecup {
+  width: 22.4rem;
+}
+#hand {
+  width: 25.6rem;
+}
+@media (min-width:64em) {
+  #coffeecup {
+    width: 28rem;
+  }
+  #hand {
+    width: 32rem;
+  }
+}
